@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('../img/sis.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+}
+
+.wrapper {
+  width: 1500px;
+  max-width: 1500px;
+  height: 450px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(10px);
+  color: white;
+  border-radius: 12px;
+  padding: 30px 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  overflow-x: auto;
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+table {
+  width: 1325px;
+  border-collapse: collapse;
+  min-width: 800px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  color: white;
+}
+
+th {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #c0c0c0;
+  letter-spacing: 1px;
+}
+
+tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background 0.2s ease;
+}
+
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  table {
+    font-size: 0.9rem;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+}
